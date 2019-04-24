@@ -1,0 +1,6 @@
+<p>All Students:</p>
+<% @students.each do |student| %>
+<p>Name: <a href="/students/<%= student.id %>"><%= student.format_name %></a></p>
+<p>Age: <%= student.age %></p>
+<p>House: <%= student.house.name.upcase %></p>
+<% end %>
